@@ -55,3 +55,4 @@
         canvas.addEventListener('mousemove', (e) => {
             bubbles.forEach(bub => {
                 const dist = Math.hypot(e.offsetX - bub.x, e.offsetY - bub.y);
+                if (dist < bub.r) {
